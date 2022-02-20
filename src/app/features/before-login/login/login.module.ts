@@ -8,8 +8,10 @@ import { MatInputModule } from '@angular/material/input';
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [LoginComponent],
-  imports: [CommonModule, LoginRoutingModule, MatRippleModule, MatFormFieldModule, MatInputModule, MatIconModule],
+  imports: [FormsModule, CommonModule, LoginRoutingModule, MatRippleModule, MatFormFieldModule, MatInputModule, MatIconModule],
 })
 export class LoginModule {}
