@@ -28,4 +28,9 @@ export class LoginComponent implements OnInit {
   }
   }
 
+  signup() {
+    console.log('method called')
+    this.router.navigate(['/signup']);
+  }
+
 }
