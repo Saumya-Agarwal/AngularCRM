@@ -1,1 +1,94 @@
-<h1>signup component</h1>
+<div class="flex flex-row items-center justify-center w-full h-full">
+  <div
+    class="
+      w-3/5
+      h-full
+      bg-gradient-to-b
+      from-primary-700
+      via-primary-900
+      to-secondary-500
+      flex flex-col
+      justify-center
+      items-center
+      overflow-hidden
+      relative
+      container
+    "
+  >
+    <div class="flex flex-col items-start w-3/4">
+      <h2 class="font-semibold text-2xl text-light-500">Ng New App</h2>
+      <p class="font-normal text-lg text-light-500 mb-4 mt-1">The most easy to use boilerplate you wanted!</p>
+      <button
+        color="primary"
+        matRipple
+        class="h-10 px-8 font-light rounded-lg bg-primary-500 text-light-500 shadow-none"
+      >
+        Read more
+      </button>
+    </div>
+  </div>
+  <div class="h-full w-2/5 flex flex-col justify-center items-start px-32">
+    <h2 class="font-bold text-md">Create Account</h2>
+    <p class="font-normal text-sm mt-1">Sign Up tp learn more!</p>
+    <form class="login-form my-10 w-full">
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="for e.g. Elon" name="firstName" type="text" autocomplete="off" required ngModel />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="for e.g. Elon" name="firstName" type="text" autocomplete="off" required ngModel />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="for e.g. johndoe@gmail.com"
+          name="email"
+          type="email"
+          autocomplete="off"
+          required
+          ngModel
+        />
+        <mat-icon matPrefix style="color: #c2c2c2" class="mr-1" fontSet="material-icons-outlined">email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" name="password" type="password" autocomplete="off" required ngModel />
+        <mat-icon matPrefix style="color: #c2c2c2" class="primary" class="mr-1" fontSet="material-icons-outlined"
+          >lock
+        </mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput placeholder="Password" name="password" type="password" autocomplete="off" required ngModel />
+        <mat-icon matPrefix style="color: #c2c2c2" class="primary" class="mr-1" fontSet="material-icons-outlined"
+          >lock
+        </mat-icon>
+      </mat-form-field>
+
+      <button
+        color="primary"
+        matRipple
+        class="h-12 w-full px-8 font-light rounded-full bg-primary-500 text-light-500 shadow-none my-3"
+        type="submit"
+      >
+        Sign Up
+      </button>
+      <a
+        class="
+          text-grey-300 text-xs
+          font-light
+          self-center
+          block
+          text-center
+          hover:text-primary-500
+          cursor-pointer
+          transition-all
+          duration-200
+        "
+        >Login</a
+      >
+    </form>
+  </div>
+</div>
